@@ -1,0 +1,186 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+html,
+body {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font: 16px 'Roboto', Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: #f6f6f6;
+}
+
+.app {
+  background: lightgray;
+  max-width: 60rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.header,
+.main,
+.footer {
+  width: 100%;
+  padding: 1rem;
+  margin: .5rem 1rem;
+  text-align: center;
+  transition: 200ms;
+  &:hover {
+    box-shadow: 0 0 2rem gray;
+  }
+}
+
+.diamond {
+  max-width: 100%;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: gray;
+  text-transform: uppercase;
+}
+
+.main {
+  flex: 1 1 auto;
+  color: black;
+  background: #333;
+  background-image: url('images/react531.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+  background: white;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn,
+.btn:focus {
+  outline: none;
+  margin: 0px 5px 0px 5px;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  border-left: none;
+  height: 30px;
+  width: 70px;
+  transition: .1s ease-in-out;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0px 3px 5px white;
+  cursor: pointer;
+}
+
+.hole {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.eats {
+  display: flex;
+}
+
+.e1, .e2, .e3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.holeimage {
+  position: relative;
+  border-bottom: 5px solid #E97616;
+  border-right: 5px solid #E97616;
+  border-left: 5px solid #E97616;
+  border-top: 5px solid #E97616;
+  transition: .1s ease-in-out;
+}
+
+.headimg {
+  position: inherit;
+  width: 210px;
+  height: 38px;
+  transition: .1s ease-in-out;
+}
+
+.meximage {
+  display: flex;
+  width: 210px;
+  height: 210px;
+  border: 5px solid #EF4B4D;
+}
+
+.mexhead,
+.magohead {
+  position: inherit;
+  border: 1px solid black;
+  width: 210px;
+  height: 38px;
+}
+
+.meximage,
+.mexhead,
+.magoimage,
+.magohead {
+  transition: .1s ease-in-out;
+}
+
+.holeimage:hover,
+.holeimage:focus,
+.headimg:hover,
+.headimg:focus,
+.meximage:hover,
+.meximage:focus,
+.mexhead:hover,
+.mexhead:focus,
+.magoimage:hover,
+.magoimage:focus,
+.magohead:hover,
+.magohead:focus {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, .5);
+}
+
+.magoimage {
+  display: flex;
+  width: 210px;
+  height: 210px;
+  border: 5px solid #000;
+}
